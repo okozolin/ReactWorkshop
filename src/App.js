@@ -7,7 +7,6 @@ import Favorites from './components/pages/Favorites';
 
 function App() {
   return (
-       //  shorthand for react not do add divs
       <BrowserRouter>
           <Route exact path='/' component={MovieIndex}/>
           <Route path='/movieindex' component={MovieIndex}/>
