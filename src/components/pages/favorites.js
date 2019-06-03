@@ -1,8 +1,12 @@
 import React from 'react';
+import Navigation from "../shared/Navigation";
 
 const Favorites = () => {
     return (
-        <h1>Favorites</h1>
+        <div>
+            <h1>Favorites</h1>
+            <Navigation/>
+        </div>
     );
 }
 export default Favorites;
