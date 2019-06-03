@@ -1,5 +1,4 @@
 import React from 'react';
-// import React from 'react';
 import MovieIndex from './components/pages/MovieIndex';
 import MovieDetails from './components/pages/MovieDetails';
 import Favorites from './components/pages/Favorites';
@@ -12,7 +11,7 @@ function App() {
        < MovieIndex/>
        < MovieDetails/>
        < Favorites/>
-</>
+      </>
 
   );
 }
