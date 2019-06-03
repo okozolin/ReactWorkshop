@@ -1,4 +1,6 @@
 import React from 'react';
+import {BrowserRouter, Route} from 'react-router-dom';
+
 import MovieIndex from './components/pages/MovieIndex';
 import MovieDetails from './components/pages/MovieDetails';
 import Favorites from './components/pages/Favorites';
@@ -6,12 +8,12 @@ import Favorites from './components/pages/Favorites';
 function App() {
   return (
        //  shorthand for react not do add divs
-      <>
-      <h1>Hello ladies</h1>
-       < MovieIndex/>
-       < MovieDetails/>
-       < Favorites/>
-      </>
+      <BrowserRouter>
+          <Route exact path='/' component={MovieIndex}/>
+          <Route path='/movieindex' component={MovieIndex}/>
+          <Route path='/moviedetails' component={MovieDetails}/>
+          <Route path='/favorites' component={Favorites}/>
+      </BrowserRouter>
 
   );
 }

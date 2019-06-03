@@ -1,8 +1,12 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
-const MovieIndex = () => {
+const MovieIndex = (props) => {
     return (
-        <h1>Movie Index</h1>
+        <div>
+            <h1>Movies index</h1>
+            <Link to="/moviedetails">movie</Link>
+        </div>
     );
 }
 export default MovieIndex;
