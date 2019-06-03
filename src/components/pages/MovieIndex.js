@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Navigation from "../shared/Navigation";
+import ShowItem from "../shared/ShowItem";
 import {apiRequest} from "../../services/api";
 
 const MovieIndex = (props) => {
@@ -20,9 +21,13 @@ const MovieIndex = (props) => {
             <h1>Movies index</h1>
             <Navigation/>
             { movies.map( movie => (
+                <>
                 <pre>
                     {JSON.stringify(movie, 1, 1)}
                 </pre>
+                <ShowItem url={movie.thumbnailUrl} id={movie.id}/>
+                </>
+
                 )
             ) }
         </div>
