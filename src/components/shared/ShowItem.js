@@ -5,7 +5,7 @@ const  ShowItem = ({movie}) => (
     // destructerung the object es6 and taking only the movies
     <>
         <div>
-            <img onClick={console.log(movie.id)} src={movie.url}/>
+            <img onClick={console.log(movie.id)} src={movie.url} alt=""/>
         </div>
         </>
     );
