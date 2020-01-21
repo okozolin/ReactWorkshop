@@ -9,8 +9,8 @@ function App() {
   return (
       <BrowserRouter>
           <Route exact path='/' component={MovieIndex}/>
-          <Route path='/movieindex' component={MovieIndex}/>
-          <Route path='/moviedetails' component={MovieDetails}/>
+          <Route path='/movieIndex' component={MovieIndex}/>
+          <Route path='/movieDetails' component={MovieDetails}/>
           <Route path='/favorites' component={Favorites}/>
       </BrowserRouter>
 

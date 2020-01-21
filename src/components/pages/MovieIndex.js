@@ -4,6 +4,7 @@ import ShowItem from "../shared/ShowItem";
 import {apiRequest} from "../../services/api";
 
 const MovieIndex = (props) => {
+    console.log("inside MovieIndex - props", props);
     const [movies, setMovies ]= useState([]);
 
     // the code will run once when the function is run (mounted) for first time
